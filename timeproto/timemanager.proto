@@ -4,8 +4,15 @@ option go_package = ".;timeproto";
 
 package timemanager;
 
+import "google/api/annotations.proto";
+
 service TimeManager {
-  rpc GetTime(TimeRequest) returns (TimeResponse) {}
+  rpc GetTime(TimeRequest) returns (TimeResponse) {
+      option (google.api.http) = {
+        post: "/v1/example/echo"
+          body: "*"
+      };
+  }
 }
 
 message TimeRequest {
