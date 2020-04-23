@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/mpedrozoduran/gogrpctest/timemanager"
-	pb "github.com/mpedrozoduran/gogrpctest/timeproto"
+	"github.com/mpedrozoduran/gogrpcserver/timemanager"
+	pb "github.com/mpedrozoduran/gogrpcserver/timeproto"
 	"google.golang.org/grpc"
 	"log"
 	"net"

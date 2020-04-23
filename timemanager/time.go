@@ -2,7 +2,7 @@ package timemanager
 
 import (
 	"context"
-	pb "github.com/mpedrozoduran/gogrpctest/timeproto"
+	pb "github.com/mpedrozoduran/gogrpcserver/timeproto"
 )
 
 type TimeStruct struct {
